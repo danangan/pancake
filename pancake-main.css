@@ -1,0 +1,56 @@
+:root {
+  --primary-color: teal;
+  --secondary-color: tomato;
+  --warning-color: gold;
+  --success-color: springgreen;
+  --danger-color: firebrick;
+}
+
+pancake-button {
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-weight: 800;
+  margin: 12px;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+pancake-button:hover {
+  transform: translate(0, 2px);
+  filter: brightness(120%);
+}
+
+pancake-button:active {
+  transform: translate(0, 6px);
+}
+
+pancake-button[theme="primary"] {
+  background-color: var(--primary-color);
+  color: white;
+  box-shadow: 0px 6px 6px rgba(0, 128, 128, 0.3);
+}
+
+pancake-button[theme="secondary"] {
+  background-color: var(--secondary-color);
+  color: white;
+  box-shadow: 0px 6px 6px rgba(255, 99, 71, 0.3);
+}
+
+pancake-button[theme="warning"] {
+  background-color: var(--warning-color);
+  color: black;
+  box-shadow: 0px 6px 6px rgba(255, 215, 0, 0.3);
+}
+
+pancake-button[theme="danger"] {
+  background-color: var(--danger-color);
+  color: white;
+  box-shadow: 0px 6px 6px rgba(178, 34, 34, 0.3);
+}
+
+pancake-button[theme="success"] {
+  background-color: springgreen;
+  color: black;
+  box-shadow: 0px 6px 6px rgba(0, 255, 127, 0.3);
+}

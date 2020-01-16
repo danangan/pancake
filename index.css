@@ -1,0 +1,35 @@
+:root {
+  --main-bg-color: ivory;
+}
+
+body {
+  background: var(--main-bg-color);
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+.app {
+  margin: 48px;
+}
+
+.title {
+  margin-bottom: 50px;
+  margin-top: 0px;
+}
+
+.container {
+  margin-bottom: 120px;
+  background: var(--main-bg-color);
+  border-radius: 10px;
+  box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.1), -6px -6px 16px rgba(255, 255, 255, 0.4);
+  padding: 30px;
+  width: auto;
+}
