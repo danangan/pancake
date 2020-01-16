@@ -4,6 +4,7 @@
 
 body {
   background: var(--main-bg-color);
+  color: darkslategray;
   margin: 0;
   font-family: 'Raleway', sans-serif;
 }
@@ -26,7 +27,7 @@ h1, h2 {
 }
 
 .container {
-  margin-bottom: 120px;
+  margin-bottom: 24px;
   background: var(--main-bg-color);
   border-radius: 10px;
   box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.1), -6px -6px 16px rgba(255, 255, 255, 0.4);
