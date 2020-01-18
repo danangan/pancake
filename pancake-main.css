@@ -1,89 +1,106 @@
 :root {
+  --main-bg-color: #eeeeee;
   --primary-color: royalblue;
   --secondary-color: tomato;
   --warning-color: gold;
-  --success-color: springgreen;
+  --success-color: darkgreen;
   --danger-color: Crimson;
+  --main-box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1), -6px -6px 6px rgba(255, 255, 255, 0.4);
+  --main-inset-box-shadow: inset 6px 6px 6px rgba(0, 0, 0, 0.1), inset -6px -6px 6px rgba(255, 255, 255, 0.4);
 }
 
 pancake-button {
   padding: 12px 24px;
-  border-radius: 24px;
+  border-radius: 12px;
   font-weight: 800;
   margin: 12px;
   display: inline-block;
   cursor: pointer;
+  font-weight: 600;
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-pancake-button:hover {
-  transform: translate(0, 2px);
-  filter: brightness(120%);
-}
-
 pancake-button:active {
-  transform: translate(0, 6px);
+  box-shadow: var(--main-inset-box-shadow) !important;
 }
 
 pancake-button[theme="primary"] {
-  background-color: var(--primary-color);
-  color: white;
-  box-shadow: 0px 12px 16px rgba(0, 128, 128, 0.5);
+  background-color: var(--main-bg-color);
+  color: var(--primary-color);
+  box-shadow: var(--main-box-shadow);
 }
 
 pancake-button[theme="secondary"] {
-  background-color: var(--secondary-color);
-  color: white;
-  box-shadow: 0px 12px 16px rgba(255, 99, 71, 0.5);
-}
-
-pancake-button[theme="warning"] {
-  background-color: var(--warning-color);
-  color: black;
-  box-shadow: 0px 12px 16px rgba(255, 215, 0, 0.5);
+  background-color: var(--main-bg-color);
+  color: var(--secondary-color);
+  box-shadow: var(--main-box-shadow);
 }
 
 pancake-button[theme="danger"] {
-  background-color: var(--danger-color);
-  color: white;
-  box-shadow: 0px 12px 16px rgba(178, 34, 34, 0.5);
+  background-color: var(--main-bg-color);
+  color: var(--danger-color);
+  box-shadow: var(--main-box-shadow);
 }
 
 pancake-button[theme="success"] {
-  background-color: springgreen;
-  color: black;
-  box-shadow: 0px 12px 16px rgba(0, 255, 127, 0.5);
+  background-color: var(--main-bg-color);
+  color: var(--success-color);
+  box-shadow: var(--main-box-shadow);
 }
 
 pancake-switch {
-  background-color: var(--danger-color);
+  background-color: var(--main-bg-color);
   width: 80px;
   height: 40px;
-  border-radius: 20px;
-  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2), inset -2px -2px 2px rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: var(--main-inset-box-shadow);
   position: relative; 
   cursor: pointer;
   display: inline-block;
-  transition: background-color 0.3s;
+  overflow: hidden;
 }
 
-pancake-switch[on] {
+/* pancake-switch[on] .button  {
   background-color: var(--success-color);
-}
+} */
 
 pancake-switch .button {
-  border-radius: 50%;
-  background: ivory;
+  background-color: var(--main-bg-color);
+  border-radius: 12px;
   width: 36px;
   height: 36px;
-  margin-left: 2px;
-  margin-right: 2px;
   float: left;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2), -2px -2px 2px rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s;
+  box-shadow: var(--main-box-shadow);
+  transition: transform 0.3s, background-color 0.3s;
   margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--danger-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
 pancake-switch[on] > .button {
   transform: translate(40px, 0);
+  color: var(--success-color)
+}
+
+pancake-input > label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+pancake-input > input {
+  background-color: var(--main-bg-color);
+  box-shadow: var(--main-inset-box-shadow);
+  height: 48px;
+  border-radius: 12px;
+  min-width: 240px;
+  border: none;
+  outline: none;
+  padding: 0 12px;
+  margin-bottom: 16px;
 }

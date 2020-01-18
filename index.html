@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Pancake - UI Frameworks build using web components</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="./pancake-main.css">
 </head>
@@ -13,17 +13,23 @@
   <div class="app">
     <h1>Pancake - Reactive Web Component</h1>
     <div class="container">
-      <h2>pancake-button</h2>
+      <h2>Button</h2>
       <pancake-button theme="primary">Primary</pancake-button>
       <pancake-button theme="secondary">Secondary</pancake-button>
-      <pancake-button theme="warning">Warning</pancake-button>
       <pancake-button theme="danger">Danger</pancake-button>
       <pancake-button theme="success">Success</pancake-button>
     </div>
 
     <div class="container">
-      <h2>pancake-switch</h2>
-      <pancake-switch on></pancake-button>
+      <h2>Text Input</h2>
+      <pancake-input placeholder="First name and last name" label="Name"></pancake-input>
+      <pancake-input placeholder="john.deo@mail.com" label="Email"></pancake-input>
+      <pancake-input placeholder="Tell us where you live" label="Address"></pancake-input>
+    </div>
+
+    <div class="container">
+      <h2>Switch</h2>
+      <pancake-switch on></pancake-switch>
     </div>
   </div>
 </body>
