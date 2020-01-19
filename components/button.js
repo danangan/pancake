@@ -12,5 +12,5 @@
     }
   }
 
-  customElements.define("pancake-button", PancakeButton);
+  customElements.define("pancake-button", PancakeButton, { extends: "button" });
 })();

@@ -13,11 +13,16 @@ pancake-button {
   padding: 12px 24px;
   border-radius: 12px;
   font-weight: 800;
-  margin: 12px;
-  display: inline-block;
+  margin: 12px 0;
   cursor: pointer;
   font-weight: 600;
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  justify-content: center;
+}
+
+pancake-button[inline-block] {
+  display: inline-block;
 }
 
 pancake-button:active {
@@ -60,10 +65,6 @@ pancake-switch {
   overflow: hidden;
 }
 
-/* pancake-switch[on] .button  {
-  background-color: var(--success-color);
-} */
-
 pancake-switch .button {
   background-color: var(--main-bg-color);
   border-radius: 12px;
@@ -103,4 +104,12 @@ pancake-input > input {
   outline: none;
   padding: 0 12px;
   margin-bottom: 16px;
+}
+
+pancake-container {
+  box-shadow: var(--main-box-shadow);
+  border-radius: 12px;
+  padding: 24px;
+  display: block;
+  width: fit-content;
 }

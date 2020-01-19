@@ -14,17 +14,26 @@
     <h1>Pancake - Reactive Web Component</h1>
     <div class="container">
       <h2>Button</h2>
-      <pancake-button theme="primary">Primary</pancake-button>
-      <pancake-button theme="secondary">Secondary</pancake-button>
-      <pancake-button theme="danger">Danger</pancake-button>
-      <pancake-button theme="success">Success</pancake-button>
+      <pancake-button theme="primary" inline-block>Primary</pancake-button>
+      <pancake-button theme="secondary" inline-block>Secondary</pancake-button>
+      <pancake-button theme="danger" inline-block>Danger</pancake-button>
+      <pancake-button theme="success" inline-block>Success</pancake-button>
     </div>
 
     <div class="container">
       <h2>Text Input</h2>
       <pancake-input placeholder="First name and last name" label="Name"></pancake-input>
       <pancake-input placeholder="john.deo@mail.com" label="Email"></pancake-input>
-      <pancake-input placeholder="Tell us where you live" label="Address"></pancake-input>
+    </div>
+
+    <div class="container">
+      <h2>Container</h2>
+      <h4>Usage with Button and Input Text</h4>
+      <pancake-container>
+        <pancake-input placeholder="john.deo@mail.com" label="Email"></pancake-input>
+        <pancake-input placeholder="Your password" label="Password"></pancake-input>
+        <pancake-button theme="primary">Submit</pancake-button>
+      </pancake-container>
     </div>
 
     <div class="container">
